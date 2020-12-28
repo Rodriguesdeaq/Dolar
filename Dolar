@@ -1,0 +1,28 @@
+algoritmo "dolar"
+
+var
+dinheiro, dinheiro_dolar, dinheiro_convertido, outro_valor, valor_final: real
+d1, d2:inteiro
+resp: caracter
+
+inicio
+dinheiro_dolar <- 5.12
+escreval ("Quanto você tem no momento?")
+leia (dinheiro)
+escreval ("O valor do dolar hoje está",dinheiro_dolar,"US$")
+escreval ("Certo então você tem",dinheiro," reias, vai converter tudo em dolar?")
+leia (resp)
+escolha resp
+caso "sim","SIM","Sim","sIM"
+   dinheiro_convertido <- (dinheiro / dinheiro_dolar)
+   d2 <- int(dinheiro_convertido)
+   escreval ("o seu valor em dolar será",d2,"US$")
+caso "não","Não","nao","NAO","nAO","nÃO"
+   escreval ("O quanto você gostaria de converter?")
+   leia (outro_valor)
+   valor_final <- (outro_valor / dinheiro_dolar)
+   d1 <- int(valor_final)
+   escreval ("o valor convertido será de:",d1,"US$")
+fimescolha
+
+fimalgoritmo
